@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#101318"/>
+
+  <!-- Body: head, legs, tail -->
+  <g fill="#D9AE5C">
+    <ellipse cx="32" cy="11.5" rx="5" ry="6"/>
+    <ellipse cx="17" cy="22" rx="6.5" ry="4.2" transform="rotate(-35 17 22)"/>
+    <ellipse cx="47" cy="22" rx="6.5" ry="4.2" transform="rotate(35 47 22)"/>
+    <ellipse cx="17.5" cy="45" rx="6" ry="4" transform="rotate(35 17.5 45)"/>
+    <ellipse cx="46.5" cy="45" rx="6" ry="4" transform="rotate(-35 46.5 45)"/>
+    <path d="M29 48L32 56L35 48Z"/>
+  </g>
+
+  <!-- Shell -->
+  <ellipse cx="32" cy="33" rx="14.5" ry="16.5" fill="#101318" stroke="#D9AE5C" stroke-width="2.5"/>
+
+  <!-- Scutes -->
+  <g fill="none" stroke="#D9AE5C" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="32" cy="33" rx="12" ry="14"/>
+    <polygon points="32,25.5 38.5,29.25 38.5,36.75 32,40.5 25.5,36.75 25.5,29.25"/>
+    <path d="M32 25.5L32 19M38.5 29.25L42.4 26M38.5 36.75L42.4 40M32 40.5L32 47M25.5 36.75L21.6 40M25.5 29.25L21.6 26"/>
+  </g>
+
+  <!-- Stars on the back -->
+  <g fill="#D9AE5C">
+    <path transform="translate(32 33.4) scale(0.52)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+    <path transform="translate(41.3 33) rotate(90) scale(0.27)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+    <path transform="translate(37 41.6) rotate(150) scale(0.27)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+    <path transform="translate(27 41.6) rotate(210) scale(0.27)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+    <path transform="translate(22.7 33) rotate(270) scale(0.27)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+    <path transform="translate(27 24.4) rotate(330) scale(0.27)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+    <path transform="translate(37 24.4) rotate(30) scale(0.27)" d="M0,-10L2.35,-3.24L9.51,-3.09L3.8,1.24L5.88,8.09L0,4L-5.88,8.09L-3.8,1.24L-9.51,-3.09L-2.35,-3.24Z"/>
+  </g>
+</svg>
