@@ -11,9 +11,18 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - name: 'Auto-assign issue'
-      uses: pozil/auto-assign-issue@v1
+    - name: Assign issue or pull request
+      uses: actions/github-script@v8
       with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: kuberin-ai
-          numOfAssignee: 1
+        script: |
+          const issueNumber = context.payload.issue?.number ?? context.payload.pull_request?.number;
+          if (!issueNumber) {
+            throw new Error("Could not find an issue or pull request number in the event payload.");
+          }
+
+          await github.rest.issues.addAssignees({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: issueNumber,
+            assignees: ["kuberin-ai"],
+          });
